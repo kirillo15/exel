@@ -55,17 +55,17 @@ module.exports = {
         collapseWhitespace: isProd
       }
     }),
-    new CopyPlugin({
+    // new CopyPlugin({
 
-      patterns: [{
+    //   patterns: [{
     
-        from: path.resolve(__dirname, 'src/favicon.ico'),
+    //     from: path.resolve(__dirname, 'src/favicon.ico'),
     
-         to: path.resolve(__dirname, 'dist')
+    //      to: path.resolve(__dirname, 'dist')
     
-      }]
+    //   }]
     
-    }),
+    // }),
     new MiniCssExtractPlugin({
       filename: filename('css')
     })
